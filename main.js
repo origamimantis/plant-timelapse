@@ -2,7 +2,6 @@
 
 const ORDER = [
   "hawthorn23",
-  "brady",
 ]
 
 var comments = {}
