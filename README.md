@@ -1,2 +1,4 @@
 # plant-timelapse
-timelapses
+plant timelapses
+
+https://origamimantis.github.io/plant-timelapse/
