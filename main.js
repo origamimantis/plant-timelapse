@@ -9,12 +9,12 @@ var comments = {}
 function showgif(name)
 {
   document.getElementById("theimg").src = "timelapses/"+name+"/"+name+".gif";
+
   let c = comments[name];
   document.getElementById("date").innerHTML = c.start + "&nbsp; &nbsp;-&nbsp; &nbsp;" + c.end
   document.getElementById("name").innerHTML = c.plant
   document.getElementById("lname").innerHTML = c.latin
   document.getElementById("descrip").innerHTML = c.comment
-  console.log(c)
 }
 
 export function loadJSON(url)
@@ -29,7 +29,6 @@ export function loadJSON(url)
   {
     ret = JSON.parse(request.responseText);
   }
-  console.log(ret)
   return ret
 }
 
