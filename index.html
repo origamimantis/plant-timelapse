@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- boilerplated from https://socket.io/get-started/chat -->
+<html>
+  <head>
+    <title>EZ3D</title>
+		<link rel="icon" href="favicon.ico?">
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script type="module" src="./main.js"></script>
+  </head>
+  <body>
+		<h2 style="margin-bottom: 1px;" >Plant Timelapses</h2>
+		<div> Timelapses of various plants grown by <a href="https://origamimantis.github.io/">me</a>. Wow!!! OMG!!!</div>
+
+		<div style="width: 25%; min-width: 400px; height: 680px; float: left" id="lister">
+			<ul id="giflist">
+			</ul>
+		</div>
+
+		<div style="width: 5%; height: 10px; float: left" id="space2">
+		</div>
+
+		<div style="width: 680px;height: 680px; float: left" id="giffer">
+			<img id="theimg" style="width: 100%; border:1px solid #000000" src="">
+		</div>
+
+		<div style="width: 5%; height: 10px; float: left" id="space2">
+		</div>
+
+		<div style="width: 25%; min-width: 400px; float: left" id="describer">
+			<div id="date"></div>
+			<br>
+			<div id="name"></div>
+			<div id="lname" style="font-style: italic"></div>
+			<br>
+			<div id="descrip"></div>
+		</div>
+
+	</body>
+</html>
