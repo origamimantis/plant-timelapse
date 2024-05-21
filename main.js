@@ -1,6 +1,8 @@
 'use strict';
 
 const ORDER = [
+  "cili24",
+  "huajiao24",
   "hawthorn23",
 ]
 
@@ -9,6 +11,7 @@ var comments = {}
 function showgif(name)
 {
   document.getElementById("theimg").src = "timelapses/"+name+"/"+name+".gif";
+  console.log(document.getElementById("theimg"))
 
   let c = comments[name];
   document.getElementById("date").innerHTML = c.start + "&nbsp; &nbsp;-&nbsp; &nbsp;" + c.end
@@ -53,4 +56,9 @@ for (let name of ORDER)
   li.appendChild(btn)
 
   l.appendChild(li);
+
+  document.getElementById("theimg").onerror = () =>
+  {
+    document.getElementById("theimg").src = "comingsoon.png";
+  }
 }
